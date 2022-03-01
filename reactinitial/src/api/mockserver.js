@@ -51,7 +51,7 @@ export function makeServer({ environment = 'development' } = {}) {
           ]
       })
 
-      this.post('/series/newsletter', (schema, request) => {
+      this.post('/newsletter', (schema, request) => {
         return { done: true }
       })
 

@@ -3,6 +3,7 @@ import http from 'axios'
 
 import LoadingMask from "./components/LoadingMask";
 import Character from "./components/Character";
+import Subscription from "./components/Subscription";
 
 const App = () => {
 
@@ -21,7 +22,7 @@ const App = () => {
     loadFunc();
     setTimeout(() => {
       setIsShown(true)
-    }, 5 * 1000);
+    }, 3 * 1000);
   }, []);
 
   return (
@@ -32,6 +33,8 @@ const App = () => {
         <Character character={character} key={i}/>
         )) 
       : <LoadingMask/>}
+
+      {isShown && <Subscription setIsShown={setIsShown}/>}
     </div>
   )
 }
