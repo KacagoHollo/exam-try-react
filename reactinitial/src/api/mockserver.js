@@ -39,11 +39,11 @@ export function makeServer({ environment = 'development' } = {}) {
     seeds(server) {
     },
     routes() {
-      this.urlPrefix = 'https://demoapi.com';
+      this.urlPrefix = 'https://seriescharacters.com';
       this.namespace = '/api';
       this.timing = 2000
 
-      this.get('/series/howimetyourmother', (schema, request) => {
+      this.get('/howimetyourmother', (schema, request) => {
         return [
             { name: "Ted Mosby", details: "He is the main protagonist of the series..."},
             { name: "Barney Stinson", details: "He is best friend of the protagonist..."},
