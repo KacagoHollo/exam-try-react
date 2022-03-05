@@ -1,6 +1,6 @@
 # React exam - Fetching API
 
-Fetching datas from an API, and display the received data. Using React components for every function, for instance LoadingMask, and Subscription. useState, useEffect was used. And setTimeout for the loading animations
+Fetching datas from an API, and display the received data. Using React components for every function, for instance LoadingMask, and Subscription. useState, useEffect was used. And setTimeout for the loading animations.
 
 Being made by React.
 
