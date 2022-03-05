@@ -6,4 +6,4 @@ Being made by React.
 
 For more about React and its usage see the README.md at the reactinitial folder.
 
-![image](https://user-images.githubusercontent.com/64640272/156887360-14a95c13-d2f0-498c-a237-d8ea09d2b7ea.png)
+![image](https://user-images.githubusercontent.com/64640272/156887626-b3b48c19-673d-4359-87ed-28876e808f89.png)
