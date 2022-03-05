@@ -5,3 +5,41 @@ body {
 App {
   font-family: arial;
 }
+
+.head {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+h1 {
+  position: relative;
+  margin: 30px auto;
+
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  width: 400px;
+  border: 1px solid #2871cc;
+
+  padding: 10px 0;
+
+  box-shadow: 0 0 100px #000;
+  background-color: rgba(120, 193, 255, 0.8);
+}
+
+.sub {
+  position: absolute;
+
+  bottom: -100px;
+  left: 50vw;
+
+  transform: translate(-50%, 0);
+}

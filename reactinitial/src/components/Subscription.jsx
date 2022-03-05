@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import http from 'axios';
 
 import LoadingMask from './LoadingMask';
+import Button from '@mui/material/Button';
 
 
 const Subscription = ({setIsShown}) => {
@@ -24,12 +25,12 @@ const Subscription = ({setIsShown}) => {
 
     const isValid = email.includes('@') && email.includes('.');
   return (
-    <div>
+    <div className='sub'>
         <h3>Subscribe to our newsletter</h3>
         {loading ? <LoadingMask/> : hasSent ? "Subscribed" : 
         <div>
             <input type="email" value={email} placeholder="E-mail" onChange={(e) => setEmail(e.target.value) }/>
-            <button onClick={loadSub} disabled={!isValid}>Subscribe</button>
+            <Button onClick={loadSub} disabled={!isValid}>Subscribe</Button>
         </div>
     }
         

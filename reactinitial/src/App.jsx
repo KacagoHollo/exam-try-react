@@ -26,14 +26,15 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className="head">
       <h1>Series Api</h1>
-      {characters ?
-      characters.map((character, i) => (
-        <Character character={character} key={i}/>
-        )) 
-      : <LoadingMask/>}
-
+      <div className="main">
+        {characters ?
+        characters.map((character, i) => (
+          <Character character={character} key={i}/>
+          )) 
+        : <LoadingMask/>}
+      </div>
       {isShown && <Subscription setIsShown={setIsShown}/>}
     </div>
   )
